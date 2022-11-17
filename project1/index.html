@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipin's Fitness Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+    body{
+        color :white;
+        margin: 0px;
+        padding 0px;
+        background: url(img/gym.jpg);
+        height: 2000px;
+        font-family: 'Baloo Bhai 2', cursive;
+
+    }
+    h1{
+        color:rgb(156, 217, 217);
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 1px;
+        /* border: 2px solid red; */
+        font-size: 15px;
+    }
+    .left img{
+        width: 120px;
+    }
+    .left img:hover{
+        color: grey;
+        cursor: pointer;
+    }
+    .left div{
+        font-size: 15px;
+        text-align : center;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .logoname:hover{
+        color: grey;
+        cursor: pointer;
+    }
+    .mid {
+    display: block;
+    width:  46%;
+    top: 20px;
+    margin: 25px auto;
+    /* border: 2px solid green; */
+    font-size: 20px;
+}
+
+    .navbar{
+        display: inline-block;
+        
+        
+    }
+    .navbar li{
+        display: inline-block;
+        padding: 1px 29px;
+    }
+    
+    /* this is hover css */
+
+    .navbar li a:hover, .navbar li a.active{
+        color: grey;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 40px;
+        /* border: 2px solid yellow; */
+
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        border: 3px solid grey;
+        padding: 4px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        /* border: 2px solid white; */
+        border-radius: 5px;
+        width: 33%;
+        margin: 3px 5px;
+        padding: 47px 111px;
+        color: rgb(255 228 0);
+        font-size: 27px;    
+    }
+    .container h3{
+        text-align: center;
+        margin: auto;
+    }
+    .container button{
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 2px 118px
+    }
+    .form-group{
+        color: white;
+        font-size: 20px;
+    }
+    .form-group input{
+        margin: 9px 101px;
+        padding: 2px 2px;
+        text-align: center;
+        border-radius: 10px;
+        padding: 2px 7px;
+        width: 286px;   
+        font-size: 20px;
+        font-family: 'Baloo Bhai 2', cursive;
+}
+    .input1{
+        margin: 2px 2px;
+        padding: 2px 2px;
+    }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="img/gym1.jfif"/>
+            <div class="logoname">Vipin's Fitness Club</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"></a></li>Home</li>
+                <li><a href="#"></a>About us</li>
+                <li><a href="#"></a>Fitness Calculator</li>
+                <li><a href="#"></a>Contact us</li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the best Gym Of Agra</h3>
+        <form action="noaction.php" class="form-group">
+            <div class="form-group">
+                
+                <input type="text" id="name" placeholder="Enter your Name" required>
+            </div>
+            <div class="form-group">
+                
+                <input type="text" id="address" class="input1" placeholder="Enter your Age" required>
+            </div>
+            <div class="form-group">
+    
+                <input type="text" id="contact" class="input1" placeholder="Enter your Gender" required>
+            </div>
+            <div class="form-group">
+                
+                <input type="text" name="name" id="email"class="input1" placeholder="Enter your Locality" required>
+            </div>
+            <div class="form-group">
+                
+                <input type="text" name="name" id="email"class="input1" placeholder="Enter your Contact No." required>
+            </div>
+            <div class="form-group">
+                
+                <input type="text" name="name" id="email"class="input1" placeholder="Enter your Email ID" required>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
